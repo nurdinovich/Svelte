@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-image: url('./assets/images/Desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    background-image: url('./assets/images/Desktop.jpg');
+  }
+  @media (max-width: 768px) {
+    background-image: url('./assets/images/Desktop.jpg');
+  }
+  @media (max-width: 480px) {
+    background-image: url('./assets/images/Desktop.jpg');
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 4rem; 
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem; 
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}

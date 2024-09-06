@@ -1,0 +1,50 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #797ea3;
+
+  label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem; 
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+    color: #797ea3;
+
+    &.activeLabel {
+      color: #ffffff;
+    }
+  }
+
+  input,
+  textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: #ffffff;
+    width: 100%;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .error {
+    color: red;
+    margin-top: 0.25rem;
+    font-size: 0.75rem; 
+  }
+}

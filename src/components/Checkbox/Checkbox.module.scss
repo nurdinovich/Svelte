@@ -1,0 +1,57 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  color: #797ea3;
+
+  input[type='checkbox'] {
+    margin-right: 0.625rem; 
+    appearance: none;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: transparent;
+    border: 1.7px solid #3f4363;
+    cursor: pointer;
+    position: relative;
+
+    &:checked {
+      background-color: #3f4363;
+      border-color: #3f4363;
+
+      &::after {
+        content: '✓';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.875rem;
+        color: white;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+
+  .error {
+    color: red;
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
